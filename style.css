@@ -1,0 +1,150 @@
+.hide{
+  display: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F2F3F4;
+}
+#container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#courasel-header{
+  text-align: center;
+  margin:10px;
+  position: relative;
+  color:  #003153;
+  font-family: Times New Roman;
+}
+#underline{
+  width: 57px;
+  height: 4px;
+  background-color: #1E90FF;
+  position: absolute;
+  left: 35%;
+  margin-top:5px ;
+}
+.courasel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  border: 1px solid #fff;
+  margin-top: 2.7em;
+  background-color: #fff;
+  box-shadow: 0 20px 30px 10px rgba(0,0,5,0.2);
+  border-radius: 5px;
+}
+.courasel-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 32em;
+}
+.person-img{
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  box-shadow: 4px -4px #1E90FF;
+  margin-top: 20px;
+}
+#text{
+  text-align: center;
+  background-color: #fff;
+  margin-top: 10px;
+  color: gray;
+  font-family: Monospace;
+  line-height: 1.6em;
+}
+#title{
+  color: #1E90FF;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 10px;
+  font-family: Courier New;
+}
+#name{
+  color:  #003153;
+  background-color: #fff;
+  font-family: cursive;
+}
+#arrow-btn{
+  margin-bottom: 20px;
+  padding: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#arrow-prev{
+  margin:0;
+  font-size: 30px;
+  margin-right: 30px;
+  border: none;
+  color:  #1E90FF;
+  background-color: #fff;
+}
+#arrow-next{
+  margin:0;
+  font-size: 30px;
+  margin-left: 30px;
+  border: none;
+  color:  #1E90FF;
+  background-color: #fff;
+}
+#random-btn{
+  border: 2px solid  #1E90FF;
+  border-radius: 10px;
+  color: #1E90FF;
+  padding: 5px;
+  background-color: lightgray;
+}
+@media screen and (max-width:565px){
+    #random-btn{
+      position: fixed;
+      bottom: 10px;
+      background-color: black;
+    }
+    #arrow-prev{
+      position: fixed;
+      left: 40%;
+      bottom: 35px;
+    }
+    #arrow-next{
+      position: fixed;
+      right: 40%;
+      bottom: 35px;
+    }
+}
+.fade-in{
+  animation-name: fadeIn;
+  animation-duration: 8s;
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.fade-in-2{
+  animation-name: fadeIn2;
+  animation-duration: 6s;
+}
+@keyframes fadeIn2{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
